@@ -18,11 +18,8 @@ class RecentCallsViewController: UIViewController {
         super.viewDidLoad()
         recentCallsTableView.delegate = self
         recentCallsTableView.dataSource = self
-        
-        
         // Do any additional setup after loading the view.
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

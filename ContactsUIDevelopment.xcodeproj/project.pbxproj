@@ -109,6 +109,7 @@
 		CE1AF5EA26046D56000BFBF1 /* ContactsUIDevelopment */ = {
 			isa = PBXGroup;
 			children = (
+				CE0D5D5A2607EFF400075460 /* ContactsUIDevelopment.xcdatamodeld */,
 				CE1AF5EB26046D56000BFBF1 /* AppDelegate.swift */,
 				CE1AF5ED26046D56000BFBF1 /* SceneDelegate.swift */,
 				CE1AF5F126046D56000BFBF1 /* Main.storyboard */,
@@ -117,7 +118,6 @@
 				CE1AF5F426046D5A000BFBF1 /* Assets.xcassets */,
 				CE1AF5F626046D5A000BFBF1 /* LaunchScreen.storyboard */,
 				CE1AF5F926046D5A000BFBF1 /* Info.plist */,
-				CE0D5D5A2607EFF400075460 /* ContactsUIDevelopment.xcdatamodeld */,
 				CE0D5D6B260876AA00075460 /* RecentCallsViewController.swift */,
 				CE5353F6260893FC00D96D68 /* CallsTableViewCell.swift */,
 				CEE727D52608D7B6003DD1CE /* DetailsContactViewController.swift */,

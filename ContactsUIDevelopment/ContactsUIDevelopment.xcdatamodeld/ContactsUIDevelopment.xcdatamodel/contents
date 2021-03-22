@@ -3,17 +3,18 @@
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phoneNumber" optional="YES" attributeType="String"/>
-        <relationship name="recentCalls" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecentCalls" inverseName="ofContact" inverseEntity="RecentCalls"/>
+        <relationship name="recentCalls" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecentCalls" inverseName="ofUser" inverseEntity="RecentCalls"/>
     </entity>
-    <entity name="RecentCalls" representedClassName="RecentCalls" parentEntity="Contact" syncable="YES" codeGenerationType="class">
+    <entity name="RecentCalls" representedClassName="RecentCalls" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="String"/>
-        <relationship name="ofContact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="recentCalls" inverseEntity="Contact"/>
+        <relationship name="ofUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="recentCalls" inverseEntity="Contact"/>
         <uniquenessConstraints>
             <uniquenessConstraint/>
         </uniquenessConstraints>
     </entity>
     <elements>
         <element name="Contact" positionX="-577.5802001953125" positionY="-2258.158508300781" width="128" height="88"/>
-        <element name="RecentCalls" positionX="-109.8615112304688" positionY="-2314.868362426758" width="128" height="73"/>
+        <element name="RecentCalls" positionX="-109.8615112304688" positionY="-2314.868362426758" width="128" height="88"/>
     </elements>
 </model>
